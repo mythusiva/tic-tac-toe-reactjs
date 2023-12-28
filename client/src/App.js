@@ -98,7 +98,11 @@ const Board = () => {
 
     return (
         <>
-            <div>
+            <div
+                style={{
+                    backgroundColor: featureFlags['backgroundColor'] || '#ffffff'
+                }}
+            >
                 <div className="max-w-7xl mx-auto px-3 py-8">
                     <div className="grid md:grid-cols-2 grid-cols-1 gap-3 h-screen relative">
                         <div className="flex justify-start items-center w-full">
