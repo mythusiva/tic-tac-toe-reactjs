@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  fflags-ms-example-app:
+    build: .
+    restart: unless-stopped
+    network_mode: "host"
+    logging:
+      options:
+        max-size: "10m"
+        max-file: "3"
